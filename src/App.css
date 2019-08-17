@@ -1,7 +1,57 @@
+*{
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  color:  #2d2926;
+}
+body{
+  background-color: #f2ecf2;
+}
 .App {
-  text-align: center;
+  text-align: center; 
+}
+.flex{
+  display:flex;
+  flex-direction: column; 
+}
+.flex.row{
+  flex-direction: row;
+}
+.container{
+    /* background-color: seashell; */
+    /* border-radius: 15px; */
+    padding-top: 5em;
+    border-bottom: solid 2px black;
+    min-height: 100vh;
+    display: flex;
+}
+.fixed{
+  position: fixed;
+  width: 100%;
+}
+.stack .image{
+
+  width: 100%;
+  height: 20em;
 }
 
+button{
+  border: 4px solid #cf4f9d;
+  background-color: transparent;
+  color:#cf4f9d;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+.scroller{
+  position: fixed;
+  top: 90vh;
+  font-family: 'Londrina Outline', cursive;
+  font-size: 1.5rem;
+  transform: rotate(-90deg)
+}
+.scroller span{
+  font-family: 'Londrina Outline', cursive;
+  font-size: 2rem;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;

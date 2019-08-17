@@ -1,0 +1,161 @@
+.us.container{
+    flex-direction: column;
+    background-color: linen;
+    overflow: hidden;
+    z-index: 3;
+    padding: 0;
+    
+}
+.us .bg{
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;  
+    position: absolute;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.bg.mountain{
+    background-image: url('/images/mountain.png');
+}
+.bg.buildings-back{
+    background-image: url('/images/buildingsbg.png');
+}
+.bg.buildings-front{
+    background-image: url('/images/buildingsfg.png');
+}
+.bg.buildings-main{
+    background-image: url('/images/main.png');
+}
+.champion-preview{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    /* background-color: gainsboro; */
+}
+.champion{
+    position: relative;
+    flex-grow:2;
+    flex-shrink:2;
+    width: 100%;
+    height: 100%;
+    /* background-color:lavenderblush; */
+    /* background-image: url('/images/testbg.png'); */
+    background-size: 150%, 70%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+}
+.champion h2{
+    position: absolute;
+    text-align: left;
+    font-family: 'Kumar One Outline', cursive;
+    font-weight: 900;
+    top: 10vh;
+    left: 10vw;
+}
+.champion .animation{
+    float: right;
+    width: 30vh;
+    margin-right: 30vh;
+    height: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+}
+.champion-info{
+    justify-content: flex-start;
+    flex-grow:2;
+    flex-shrink:2;
+    justify-content: space-between;
+    width: 100%;
+    /* max-width: 800px; */
+    padding: 5% 5% 3em 5%;
+    text-align: left;
+    /* background-color: lightcyan; */
+}
+.stats{
+    max-width: 500px;
+}
+.summary{
+    max-width: 500px;
+    color: white;
+    height: 25%;
+    font-size: 1.3em;
+    font-weight: 500;
+}
+.stat{
+    margin: 1em 0 1em 0;
+}
+.stat h4{
+    line-height: 1em;
+    margin: 0;
+    width: 100%;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    color: white;
+    margin-bottom: 0.2em;
+}
+.bar{
+    width: 100%;
+    border-radius: 2em;
+    background-color: lightblue;
+    height: 1em;
+}
+.bar.inner{
+    width: 50%;
+    background-color: lightpink;
+    border-radius: 2em 0 0 2em;
+}
+.choices{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+    justify-content: flex-start;
+    /* background-color: lightcyan; */
+}
+.choices h1{
+    color: lightpink;
+    line-height: 20vh;
+    margin: 0;
+}
+.persons{
+    width: 85%;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+}
+.person{
+    /* border: 0.1em solid lightpink;x */
+    background-image: url('/images/avatar.webp');
+    background-size: 260px 190px;
+    background-position-x: center;
+    background-position-y: -10px;
+    border-radius: 50%;
+    width: 5em;
+    height: 5em;
+    margin: 0.5em;
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 550px){
+    .champion-preview{
+        flex-wrap: wrap;
+    }
+    .champion-info{
+        height: 50%;
+    }
+    .champion{
+        height: 50%;
+    }
+}

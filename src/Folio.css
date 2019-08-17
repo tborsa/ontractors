@@ -1,0 +1,49 @@
+.container.folio{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    background-color: #1c1a1f;
+    justify-content: space-between;
+
+}
+
+.folio .column{
+    width: 31vw;
+    margin-top: -15vw;
+}
+.folio .preview{
+    width: 100%;
+    height: 25vw;
+    background-color: salmon;
+    margin-bottom: 3vw;
+    background-size: cover;
+    box-shadow: 10px 10px 5px #151417;
+
+}
+.folio .preview.info{
+    padding: 3.5em;
+    height: 20vw;
+    background-color: transparent;
+    color: linen;
+    box-shadow: 0 0;
+}
+.preview.info h2{
+    margin-bottom: 0;
+    font-size: 3em;
+    color: linen;
+}
+.preview.info p{
+    margin: 0;
+    font-size: 1em;
+    color: linen;
+}
+.folio .shift{
+    margin-top: -17vw;
+}
+.folio .shiftmore{
+    margin-top: -19vw;
+}
+.folio .zoom:hover{
+    transform: scale(1.1);
+}
