@@ -2,9 +2,9 @@ import React, {useReducer, useState} from 'react';
 import './Us.css';
 
 const developers = [
-    {name: 'neezy', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper. He cant stand it got a  ", stats: { react: 8, freestyling: 9, lectures: 8}},
-    {name: 'Tradvis', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper. He cant stand it got a  ", stats: { react: 7, freestyling: 9, lectures: 8}},
-    {name: 'T', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper. He cant stand it got a  ",stats: { react: 8, freestyling: 9, lectures: 8}},
+    {name: 'neezy', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper.   ", stats: { react: 8, freestyling: 9, lectures: 8}},
+    {name: 'Tradvis', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper.   ", stats: { react: 7, freestyling: 9, lectures: 8}},
+    {name: 'T', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper.   ",stats: { react: 8, freestyling: 9, lectures: 8}},
     {name: 'Tina', animation:"/images/testguy.png", stats: { react: 3, freestyling: 9, lectures: 8}},
 ];
 
@@ -60,11 +60,11 @@ const Us = () => {
             <div className="bg buildings-main"></div>
             <div className="champion-preview flex row">
                 <div className="champion">
-                    <h2>{employee.name}</h2>
                     <div className="animation" style={{backgroundImage: "url("+employee.animation+")"}}>
                     </div>
                 </div>
                 <div className="champion-info flex">
+                    <h1>{employee.name}</h1>
                     <div className="choices">
                         {/* <h1 onClick={back}>{'<'}</h1> */}
                         <div className="persons flex row">

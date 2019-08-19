@@ -19,3 +19,7 @@
       margin: 0.1em;
       max-width: 500px;
   }
+.stack .renderer{
+    z-index: -7;
+    position: absolute;
+}

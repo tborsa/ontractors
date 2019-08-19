@@ -8,7 +8,7 @@ import Folio from './Folio';
 const ScrollBody = () => {
     return (
         <div className="scroll-body flex">
-            <div className="bg-image"></div>
+            {/* <div className="bg-image"></div> */}
             <Stack></Stack>
             <Us></Us>
             <Folio></Folio>

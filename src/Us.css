@@ -54,14 +54,7 @@
     background-position-x: center;
     background-position-y: bottom;
 }
-.champion h2{
-    position: absolute;
-    text-align: left;
-    font-family: 'Kumar One Outline', cursive;
-    font-weight: 900;
-    top: 10vh;
-    left: 10vw;
-}
+
 .champion .animation{
     float: right;
     width: 30vh;
@@ -79,10 +72,14 @@
     justify-content: space-between;
     width: 100%;
     /* max-width: 800px; */
-    padding: 5% 5% 3em 5%;
+    padding: 5% 5% 3em 8%;
     text-align: left;
     /* background-color: lightcyan; */
 }
+.champion-info h1{
+    color: white;
+}
+
 .stats{
     max-width: 500px;
 }
@@ -113,7 +110,7 @@
 }
 .bar.inner{
     width: 50%;
-    background-color: lightpink;
+    background-color: salmon;
     border-radius: 2em 0 0 2em;
 }
 .choices{
