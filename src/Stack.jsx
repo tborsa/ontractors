@@ -166,7 +166,7 @@ const Stack = () => {
     }, [])
 
     return (
-        <div className="stack container flex row">
+        <div className="stack container flex row ParallaxContainer">
             <div className="renderer"ref={threeContainer}></div>
             <div className="block">
                 <div className="title">

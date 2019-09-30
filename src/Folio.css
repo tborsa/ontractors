@@ -1,11 +1,8 @@
 .container.folio{
-    position: fixed;
-    top: 0;
     width: 100%;
-    z-index: 2;
     background-color: #1c1a1f;
     justify-content: space-between;
-
+    overflow: hidden;
 }
 
 .folio .column{
@@ -14,10 +11,12 @@
 }
 .folio .preview{
     width: 100%;
-    height: 25vw;
-    background-color: salmon;
+    height: 19vw;
+    /* background-color: salmon; */
     margin-bottom: 3vw;
-    background-size: cover;
+    background-size: contain;
+    background-position:center;
+    background-repeat: no-repeat;
     box-shadow: 10px 10px 5px #151417;
 
 }

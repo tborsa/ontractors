@@ -68,9 +68,32 @@ button{
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.ParallaxContainer {
+  z-index: -1;
+  transform: translateZ(-1px) scale(2);
+  min-width: 400px;
+}
+.ParallaxContainer-mid {
+  z-index: -1;
+  transform: translateZ(-0.66px) scale(1.666);
+  min-width: 400px;
+}
+.ParallaxContainer-close{
+  z-index: -1;
+  transform: translateZ(-0.33px) scale(1.333);
+  min-width: 400px;
+}
 .App-link {
   color: #61dafb;
+}
+.pixel{
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+  image-rendering: -moz-crisp-edges;          /* Firefox                        */
+  image-rendering: -o-crisp-edges;            /* Opera                          */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated;                 /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+  -ms-interpolation-mode: nearest-neighbor;  
 }
 
 @keyframes App-logo-spin {

@@ -26,7 +26,7 @@
     background-color: #2d2926;
     text-align: center;
     padding: 0.5em 0.7em 0.5em 0.7em;
-    border-radius: 12px;
+    border-radius: 2px;
 }
 .menu .contact span{
     color: #cf4f9d;
@@ -34,6 +34,9 @@
 }
 .menu nav{
     display: flex; 
+}
+#light{
+    height: 0px;
 }
 #light .menu{
     background-color: #2d2926;

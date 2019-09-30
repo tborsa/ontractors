@@ -1,15 +1,15 @@
-import React, {useReducer, useState} from 'react';
+import React, {useReducer, useState, useRef} from 'react';
 import './Us.css';
 
 const developers = [
-    {name: 'neezy', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper.   ", stats: { react: 8, freestyling: 9, lectures: 8}},
-    {name: 'Tradvis', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper.   ", stats: { react: 7, freestyling: 9, lectures: 8}},
-    {name: 'T', animation:"/images/testguy.png", summary: "Neezy is a full stacker lecture and amature rapper.   ",stats: { react: 8, freestyling: 9, lectures: 8}},
-    {name: 'Tina', animation:"/images/testguy.png", stats: { react: 3, freestyling: 9, lectures: 8}},
+    {name: 'neezy', animation:"/images/nima.png", summary: "Neezy is a full stacker lecture and amature rapper.   ", stats: { react: 8, freestyling: 9, lectures: 8}},
+    {name: 'Tradvis', animation:"/images/travis.png", summary: "Neezy is a full stacker lecture and amature rapper.   ", stats: { react: 7, freestyling: 9, lectures: 8}}
 ];
 
 const Us = () => {
     developers[0].index = 0;
+    const mountain = useRef(null);
+    var images = mountain.current;
     let timer = () =>{
         setInterval(()=>{
             setEmployee((employee) => {
@@ -49,18 +49,18 @@ const Us = () => {
         if(windowStart<=index){
             position = -windowStart;
         }
-        return <div onClick={()=>{newEmployee(index)}} style={{order: position}} className="person"></div>
+        return <div onClick={()=>{newEmployee(index)}} style={{order: position}} style={{backgroundImage: "url("+developer.animation+")"}} className="person pixel"></div>
     });
 
     return (
         <div className="us container">
-            <div className="bg mountain"></div>
-            <div className="bg buildings-back"></div>
-            <div className="bg buildings-front"></div>
-            <div className="bg buildings-main"></div>
+            <div className="bg pixel mountain ParallaxContainer" ref={mountain} ></div>
+            <div className="bg pixel buildings-back ParallaxContainer-mid"></div>
+            <div className="bg pixel buildings-front ParallaxContainer-close"></div>
+            <div className="bg pixel buildings-main"></div>
             <div className="champion-preview flex row">
                 <div className="champion">
-                    <div className="animation" style={{backgroundImage: "url("+employee.animation+")"}}>
+                    <div className="animation pixel" style={{backgroundImage: "url("+employee.animation+")"}}>
                     </div>
                 </div>
                 <div className="champion-info flex">

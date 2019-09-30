@@ -1,0 +1,12 @@
+.paint{
+  position: absolute;
+  height: 300vh;
+  width: 100%;
+  /* z-index: -100; */
+  z-index: 100;
+}
+.paint .spot{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+}
