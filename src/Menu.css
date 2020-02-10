@@ -9,7 +9,27 @@
 .menu-holder{
     z-index: 100;
     overflow: hidden;
-    height: 100px;
+    height: 104px;
+}
+.menu-holder .info-bar{
+    background-color: #362066;
+    height: 25px;
+    position:absolute;
+    width: 100%;
+    bottom:85px;
+    color: cornsilk;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2.3rem;
+    padding-right: 2.3rem;
+    font-size: 10px;
+}
+.menu-holder .info-bar span{
+    color: cornsilk;
+}
+.menu-holder .info-bar a{
+    color: white;
 }
 .menu-holder .bottom{
     position:absolute;
@@ -18,15 +38,17 @@
 .logo{
     font-weight: 900;
     font-size: 2em;
-    color: #2d2926;
+    width: 327px;
+    height: 40px;
+    background-image: url('/images/logodark.png');
 }
 .menu .contact{
-    font-weight: 700;
+    font-weight: 500;
     color: white;
     background-color: #2d2926;
     text-align: center;
-    padding: 0.5em 0.7em 0.5em 0.7em;
-    border-radius: 2px;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 5px;
 }
 .menu .contact span{
     color: #cf4f9d;
@@ -39,15 +61,16 @@
     height: 0px;
 }
 #light .menu{
-    background-color: #2d2926;
+    /* background-color: #2d2926; */
     /* visibility: hidden; */
 }
 #light .logo{
+    background-image: url('/images/logodark.png');
     color: white;
 }
 #dark .logo{
-    background: -webkit-linear-gradient(#FF416C, #FF4B2B);
-    -webkit-background-clip: text;
+    background-image: url('/images/logolight.png');
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 #dark .menu{
@@ -55,4 +78,22 @@
 }
 #dark{
     height: 0;
+}
+
+@media only screen and (min-width: 500px){
+    .menu-holder .info-bar .contact{
+        display: none;
+    }
+}
+@media only screen and (max-width: 500px){
+    .menu-holder .menu .contact{
+        display: none;
+    }
+}
+@media only screen and (max-width: 400px){
+    .logo{
+        /* background-size: contain; */
+        background-size: 163.5px 20px;
+        background-repeat: no-repeat;
+    }
 }

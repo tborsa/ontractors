@@ -4,7 +4,7 @@
   color:  #2d2926;
 }
 body{
-  background-color: #f2ecf2;
+  background-color: #1c1a1f;
 }
 .App {
   text-align: center; 
@@ -20,7 +20,8 @@ body{
     /* background-color: seashell; */
     /* border-radius: 15px; */
     padding-top: 5em;
-    border-bottom: solid 2px black;
+    overflow: hidden;
+    border-bottom: solid 3px black;
     min-height: 100vh;
     display: flex;
 }
@@ -35,10 +36,10 @@ body{
 }
 
 button{
-  border: 4px solid #cf4f9d;
+  border: 3px solid #cf4f9d;
   background-color: transparent;
   color:#cf4f9d;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.2em;
 }
 .scroller{
@@ -71,17 +72,14 @@ button{
 .ParallaxContainer {
   z-index: -1;
   transform: translateZ(-1px) scale(2);
-  min-width: 400px;
 }
 .ParallaxContainer-mid {
   z-index: -1;
   transform: translateZ(-0.66px) scale(1.666);
-  min-width: 400px;
 }
 .ParallaxContainer-close{
   z-index: -1;
   transform: translateZ(-0.33px) scale(1.333);
-  min-width: 400px;
 }
 .App-link {
   color: #61dafb;

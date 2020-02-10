@@ -43,10 +43,11 @@ const Menu = (props) => {
     }
     return (
             <div className='fixed menu-holder' id={props.theme} style={height}>
-                    <div className="menu flex" style={bottom}>
-                        <div className="logo">codeby#'s</div>
-                        <div className="contact">Let's Talk<span>!</span></div>
-                    </div>
+                <div className="info-bar"> <span>Come work with us! &nbsp;<a href="#">here</a></span><a className="contact" href="#">Let's Talk!</a> </div>
+                <div className="menu flex" style={bottom}>
+                    <div className="logo"></div>
+                    <div className="contact">Let's Talk<span>!</span></div>
+                </div>
             </div>
         );
     }

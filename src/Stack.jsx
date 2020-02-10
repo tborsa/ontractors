@@ -1,5 +1,5 @@
 import React, {useEffect, useRef} from 'react';
-import './Stack.css';
+import './Pane.css';
 import * as THREE from "three";
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import model from './model/pancakes.gltf';
@@ -80,9 +80,9 @@ const Stack = () => {
             light.shadowDarkness = 0.2;
 
             scene.add(light);
-            var helper = new THREE.CameraHelper( light.shadow.camera );
+            // var helper = new THREE.CameraHelper( light.shadow.camera );
             //scene.add(sun)
-            scene.add( helper );
+            // scene.add( helper );
             
             
             var boxgeometry = new THREE.CubeGeometry(100, 100, 100);
@@ -166,7 +166,7 @@ const Stack = () => {
     }, [])
 
     return (
-        <div className="stack container flex row ParallaxContainer">
+        <div className="pane container borderless flex row">
             <div className="renderer"ref={threeContainer}></div>
             <div className="block">
                 <div className="title">

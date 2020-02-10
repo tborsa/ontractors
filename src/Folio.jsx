@@ -22,23 +22,32 @@ const Folio = () => {
     // }
     return (
         <div className="folio container flex row ParallaxContainer">
-            <div className="column flex">
+            <div className="column flex first">
                 <div className="preview zoom" style={{backgroundImage: `url(/images/folio1.png)`}}></div> 
                 <div className="preview zoom" style={{backgroundImage: `url(/images/folio2.png)`}}></div> 
                 <div className="preview zoom" style={{backgroundImage: `url(/images/folio1.png)`}}></div> 
+                <div className="preview zoom" style={{backgroundImage: `url(/images/folio1.png)`}}></div> 
+                <div className="preview zoom left" style={{backgroundImage: `url(/images/folio2.png)`}}></div> 
+                <div className="preview zoom skew one" style={{backgroundImage: `url(/images/folio1.png)`}}></div> 
             </div>
             <div className="column flex shift">
+                <div className="preview zoom" style={{backgroundImage: `url(/images/bento.jpg)`}}></div> 
                 <div className="preview zoom" style={{backgroundImage: `url(/images/bento.jpg)`}}></div> 
                 <div className="preview info">
                         <h2>Our Work</h2>
                         <p>its what we do</p>
                 </div> 
-                <div className="preview zoom" style={{backgroundImage: `url(/images/bento.jpg)`}}></div> 
+                <div className="preview zoom" style={{backgroundImage: `url(/images/folio1.png)`}}></div> 
+                <div className="preview zoom right" style={{backgroundImage: `url(/images/folio2.png)`}}></div> 
+                <div className="preview zoom skew two" style={{backgroundImage: `url(/images/folio1.png)`}}></div> 
             </div>
             <div className="column flex shiftmore">
                 <div className="preview zoom" style={{backgroundImage: `url(/images/folio2.png)`}}></div> 
                 <div className="preview zoom" style={{backgroundImage: `url(/images/folio1.png)`}}></div> 
-                <div className="preview zoom" style={{backgroundImage: `url(/images/folio2.png)`}}></div> 
+                <div className="preview zoom" style={{backgroundImage: `url(/images/folio2.png)`}}></div>
+                <div className="preview zoom" style={{backgroundImage: `url(/images/folio1.png)`}}></div> 
+                <div className="preview zoom left" style={{backgroundImage: `url(/images/folio2.png)`}}></div> 
+                <div className="preview zoom skew three" style={{backgroundImage: `url(/images/folio1.png)`}}></div>  
             </div>
         </div>
         

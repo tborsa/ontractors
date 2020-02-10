@@ -1,0 +1,62 @@
+.pane.container{
+    position: relative;
+    justify-content: space-around;
+    align-items: center;
+}
+.pane.container.borderless{
+    border-style: none;
+}
+.pane.container.white{
+    background-color: white;
+}
+.pane .background{
+    z-index: -7;
+    width: 100%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    margin-bottom: 3vw;
+    height: 100vh;
+    background-image: url('/images/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+}
+.pane .block{
+    width: 50vw;
+    text-align: left;
+    max-width: 550px;
+    padding-right: 5vw;
+}
+.pane .title{
+    line-height: 0.8em;
+    font-size: 4em;
+    font-weight: 500;
+    flex-grow: 2;
+    flex-shrink: 1;
+  }
+  .pane p {
+      font-size: 1.4em;
+      margin: 0.1em;
+  }
+.pane .renderer{
+    position: absolute;
+    top:0;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 800px) {
+    .pane.container{
+        flex-direction: column !important;
+    }
+    .pane .block{
+        width: 90vw;
+        margin-bottom: 7vh;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .pane .block{
+        font-size: 0.8em;
+    }
+}

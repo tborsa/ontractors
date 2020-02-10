@@ -1,17 +1,23 @@
 .container.folio{
-    width: 100%;
+    width: 100vw;
     background-color: #1c1a1f;
-    justify-content: space-between;
+    justify-content: space-around;
     overflow: hidden;
+    min-height: 200vh;
+    z-index: -10;
+    border: 0px solid black;
 }
 
 .folio .column{
-    width: 31vw;
+    width: 100%;
+    margin-left: 2vw;
+    margin-right: 2vw;
     margin-top: -15vw;
 }
 .folio .preview{
     width: 100%;
     height: 19vw;
+    flex-shrink: 0;
     /* background-color: salmon; */
     margin-bottom: 3vw;
     background-size: contain;
@@ -21,11 +27,38 @@
 
 }
 .folio .preview.info{
-    padding: 3.5em;
-    height: 20vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: transparent;
     color: linen;
     box-shadow: 0 0;
+}
+.folio .preview.left {
+    margin-top: 20px;
+    transform: rotate(2deg);
+}
+.folio .preview.right {
+    margin-top: 20px;
+    transform: rotate(-3deg);
+}
+.folio .preview.skew.one {
+    width: 60%;
+    align-self: center;
+    transform: rotate(5deg);
+}
+.folio .preview.skew.two {
+    width: 80%;
+    margin-top: 70px;
+    align-self: center;
+    transform: rotate(-10deg);
+}
+.folio .preview.skew.three {
+    margin-top: 50px;
+    width: 50%;
+    align-self: center;
+    transform: rotate(10deg);
 }
 .preview.info h2{
     margin-bottom: 0;
@@ -38,11 +71,29 @@
     color: linen;
 }
 .folio .shift{
-    margin-top: -17vw;
+    margin-top: -10vw;
 }
 .folio .shiftmore{
     margin-top: -19vw;
 }
 .folio .zoom:hover{
     transform: scale(1.1);
+}
+
+@media only screen and (max-width: 800px) {
+    .folio .preview {
+        height: 30vw;
+    }
+    .folio .shiftmore{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .folio .preview {
+        height: 50vw;
+    }
+    .folio .first{
+        display: none;
+    }
 }

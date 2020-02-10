@@ -1,7 +1,6 @@
 .paint{
   position: absolute;
   height: 300vh;
-  width: 100%;
   /* z-index: -100; */
   z-index: 100;
 }
